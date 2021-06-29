@@ -36,37 +36,7 @@ os.system('git pull')
 os.system('clear')
 logo = '\n\x1b[1;93m      CODER + AUTHoR rana   :     Rana zuqwan\n\x1b[1;96m      HAHA    :     NAM TU SUNA HUGA\n\x1b[1;95m         AUTHOR2      :    SUNNY\n\x1b[1;97m       \n\x1b[1;98m  FB + YT \n\x1b[1;97m Rana MZ\n
  
-def ip():
-    os.system('clear')
-    print logo
-    print ''
-    print '\tCollecting device info'
-    print ''
-    try:
-        ipinfo = requests.get('http://ip-api.com/json/')
-        z = json.loads(ipinfo.text)
-        ips = z['query']
-        country = z['country']
-        regi = z['regionName']
-        network = z['isp']
-    except:
-        pass
- 
-    print '\x1b[1;93m Your ip: ' + ips
-    time.sleep(2)
-    print ''
-    print '\x1b[1;95m Your country: ' + country
-    time.sleep(2)
-    print ''
-    print '\x1b[1;92m Your region: ' + regi
-    time.sleep(2)
-    print ''
-    print ' \x1b[1;97mYour network: ' + network
-    time.sleep(1)
-    print ''
-    print ' Loading ...'
-    time.sleep(1)
-    log_menu()
+
  
  
 def log_menu():
@@ -97,8 +67,7 @@ def log_menu_s():
         print '\\ Select valid option '
         print ''
         log_menu_s()
- 
- 
+
 def log_fb():
     os.system('clear')
     print logo
