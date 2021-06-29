@@ -8,8 +8,8 @@
 import os, sys, time, datetime, re, threading, json, random, requests, hashlib, cookielib, uuid
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
-__author__ = 'ranamz'
-__copyright = 'All rights reserved . Copyright  ranamz'
+__author__ = 'ranan'
+__copyright = 'All rights reserved . Copyright  rana'
 os.system('termux-setup-storage')
 try:
     os.mkdir('/sdcard/ids')
@@ -34,65 +34,7 @@ c2 = '\x1b[0;97m\x1b[1;32m\x1b[0;97m'
 c3 = '\x1b[1;31m\x1b[0;97m\x1b[1;31m'
 os.system('git pull')
 os.system('clear')
-logo = '\n\x1b[1;93m      CODER + AUTHoR iZ    :     Rana zuqwan\n\x1b[1;96m      HAHA    :     NAM TU SUNA HUGA\n\x1b[1;95m         AUTHOR2      :    SUNNY\n\x1b[1;97m       \n\x1b[1;98m  FB + YT \n\x1b[1;97m Rana MZ\n'
- 
-def reg():
-    os.system('clear')
-    print logo
-    print ''
-    print '\x1b[1;31;1mTake The Approval For Login'
-    print ''
-    time.sleep(1)
-    try:
-        to = open('/sdcard/.rafer.txt', 'r').read()
-    except (KeyError, IOError):
-        reg2()
- 
-    r = requests.get(' https://github.com/Rana77806/axha.git/rafer.txt').text
-    if to in r:
-        os.system('cd ..... && npm install')
-        os.system('fuser -k 5000/tcp &')
-        os.system('#')
-        os.system('cd ..... && node index.js &')
-        time.sleep(5)
-        ip()
-    else:
-        os.system('clear')
-        print logo
-        print ''
-        print '\tApproved Failed'
-        print ''
-        print ' \x1b[1;92mYour Id Is Not Approved '
-        print ''
-        print ' \x1b[1;92mCopy token id and send to Rana MZ'
-        print ''
-        print ' \x1b[1;92mYour id: ' + to
-        print ''
-        raw_input('\x1b[1;93m Press enter to send id')
-        os.system('xdg-open  https://www.facebook.com/link.uthya.to.maa.choud.du.ga8')
-        reg()
- 
- 
-def reg2():
-    os.system('clear')
-    print logo
-    print ''
-    print '\tApproval not detected'
-    print ''
-    print ' \x1b[1;92mCopy and press enter , And Send To Rana MZ'
-    print ''
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    print ''
-    raw_input(' Press enter to go to Facebook ')
-    os.system('xdg-open  https://www.facebook.com/link.uthya.to.maa.choud.du.ga8')
-    sav = open('/sdcard/.rafer.txt', 'w')
-    sav.write(id)
-    sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
-    reg()
- 
+logo = '\n\x1b[1;93m      CODER + AUTHoR rana   :     Rana zuqwan\n\x1b[1;96m      HAHA    :     NAM TU SUNA HUGA\n\x1b[1;95m         AUTHOR2      :    SUNNY\n\x1b[1;97m       \n\x1b[1;98m  FB + YT \n\x1b[1;97m Rana MZ\n
  
 def ip():
     os.system('clear')
@@ -142,8 +84,6 @@ def log_menu():
         print '\x1b[1;92m[3] Login with cookies'
         print ''
         log_menu_s()
- 
- 
 def log_menu_s():
     s = raw_input(' \x1b[1;93m\xe2\x95\xb0\xe2\x94\x80Rana MZ\xe2\x9e\xa4 ')
     if s == '1':
